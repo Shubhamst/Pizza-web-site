@@ -1,0 +1,375 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--font-sm);
+  /* background-color: var(--body-color); */
+  background-color: #1a0202;
+  color: var(--text-color);
+  transition: background 0.4s;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.nav-wrapper {
+  height: 50px;
+  background-color: orange;
+
+
+}
+
+#nav-web {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 10px;
+
+
+
+
+}
+
+#nav-web a:hover {
+  color: rgb(40, 6, 6);
+  transition: color 0.4s;
+
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Gilroy";
+  font-weight: 650;
+
+}
+
+.brand-logo img {
+  width: 120px;
+  position: absolute;
+  top: 1px;
+  left: 10%;
+  rotate: 10deg;
+}
+
+.main {
+  overflow: hidden;
+  background-color: #1e0202;
+}
+
+#pizza1 {
+  width: 700px;
+  position: relative;
+  left: 23%;
+}
+
+.title {
+  width: 220px;
+  height: 300px;
+  border-radius: 20px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.title h1 {
+  font-size: 70px;
+  color: white;
+  font-family: Pacifico;
+  font-weight: 10;
+}
+
+.Home_data p {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 40px;
+  width: 460px;
+  font-weight: 80;
+  position: absolute;
+  top: 33%;
+  right: 1%;
+}
+
+
+
+/*~~~~~~~~~~~~~~~ BUTTON ~~~~~~~~~~~~~~~*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: red;
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.3s;
+  position: absolute;
+  top: 60%;
+  right: 18%;
+  text-decoration: none;
+}
+
+.button i {
+  font-size: 1.25rem;
+  transition: transform 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(114, 205, 76, 0.814);
+}
+
+.button:hover i {
+  transform: translateX(0.25rem);
+}
+
+
+/* ----------Menu-------- */
+
+#popular span{
+  font-size: 30px;
+  color: white;
+  font-family: Pacifico;
+  font-weight: 10;
+  position: absolute;
+  left: 40%;
+  margin-top: 135px;
+}
+
+#popular h2{
+  font-size: 35px;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 25;
+  position: absolute;
+  left: 42%;
+  margin-top: 210px;
+}
+
+
+
+.popular__container {
+  padding-top: 18rem;
+  padding-bottom: 20rem;
+  display: flex;
+  gap: 6px;
+
+}
+
+.popular__card {
+  height: 320px;
+  position: relative;
+  background-color: rgba(224, 216, 216, 0.77) ;
+  padding: 2rem 2rem 1rem;
+  box-shadow: 0 8px 20px hsla(17, 14%, 90%, 0.597);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+.popular__content {
+  text-align: right;
+}
+
+.popular__img {
+  width: 150px;
+  align-self: flex-start;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  transition: transform 0.4s;
+}
+
+.popular__name {
+  font-size: 25px;
+  font-weight: 100;
+  margin-block: 3rem 0.25rem;
+  color: #1a0202;
+}
+
+.popular__description {
+  font-size: 25px;
+  margin-block: 0 0.25rem;
+  font-weight: 50;
+  font-family: 'Amatic SC', cursive;;
+}
+
+.popular__price {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(190, 30, 30);
+}
+
+.popular__button {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 20px hsla(19, 64%, 20%, 0.2);
+  transition: background 0.3s;
+}
+
+.popular__card:hover .popular__button {
+  background-color:  rgba(114, 205, 76, 0.814);
+}
+
+.popular__card:hover .popular__img {
+  transform: translateY(-0.55rem);
+}
+
+
+
+
+
+/*~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~*/
+.footer {
+  padding-block: 2rem 2rem;
+  background-color:#1e0202;
+ 
+
+}
+
+
+
+.footer__container {
+  row-gap: 10rem;
+  display: flex;
+  gap: 180px;
+  margin-bottom: 100px;
+ 
+}
+
+
+.footer__logo img{
+  width: 90px;
+  position: relative;
+bottom: 10%;
+left: 65%;
+rotate: 10deg;
+}
+
+.footer__description{
+  position: relative;
+  bottom: 10%;
+  left: 40%;
+
+}
+
+
+.footer__description,
+.footer__link,
+.footer__information {
+  font-size: 25px;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+}
+
+
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__content
+ {
+  position: relative;
+  left: 12%;
+  display: grid;
+  display: flex;
+ 
+}
+.footer__content {
+  grid-template-columns: repeat(2, max-content);
+  gap: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+
+.footer__title {
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: Pacifico;
+}
+
+.footer__links {
+  row-gap: 0.5rem;
+}
+
+.footer__link {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: greenyellow;
+}
+
+
+.footer__social {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.footer__social-link {
+  color: white;
+  font-size: 1.25rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer__social-link:hover {
+  color:greenyellow;
+  transform: translateY(-2px);
+}
+
+
+.footer__copy {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 25px;
+  color: red;
+}
+
+/* Show Scroll Up */
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: 1%;
+  background-color:rgb(255, 252, 252);
+  box-shadow: 0 4px 12px hsla(19, 64%, 24%, 0.1);
+  display: inline-flex;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  color:rgb(202, 12, 12);
+  z-index: 1000;
+  transition: bottom 0.3s, transform 0.3s, background 0.4s;
+  text-decoration: none;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
+
+
+
+.show-scroll {
+  bottom: 3rem;
+
+}
+
